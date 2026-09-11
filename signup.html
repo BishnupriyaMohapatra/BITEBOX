@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitebox Deals</title>
+
+    <script src="https://kit.fontawesome.com/b488c3478e.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon/android-chrome-192x192.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+    <div>
+        <!-- Logo -->
+        <img src="images/Copilot_20260706_181946 (1).png" alt="logo" width="100px">
+        <!-- Menu -->
+    </div>
+<ul>
+    <li><a href="Home.html" class="active">HOME</a></li>
+    <li><a href="menu.html">MENU</a></li>
+    <li><a href="bitedeals.html">BITEDEALS</a></li>
+    <li><a href="Cart.html"><i class="fa-solid fa-cart-arrow-down"></i></i>CART</a></li>
+    <li><a href="login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>LOGIN</a></li>
+</ul>
+    
+</nav>
+    </header>
+    <section class="auth-container">
+        <div class="auth-box">
+            <h2>Create account</h2>
+            <form>
+                <!-- <label for="text">Name</label> -->
+                <input type="text" placeholder="Full Name" id="text" required>
+                <!-- <label for="email">Email</label> -->
+                <input type="email" placeholder="Enter Email" name="email" id="email" required >
+
+                <div style="position: relative;">
+                <input type="password" id="password" placeholder="Password" name="password" >
+                 <span onclick="togglePassword()"
+                style="position: absolute;
+                right:10px;
+                top:50%;
+                transform:translateY(-50%);
+                cursor:pointer;"
+                >
+                <i class="fa-solid fa-eye" id="togglePassword" style="color: red;"></i>
+                </span>
+                </div>
+                <div style="position: relative;">
+                <input type="password" id="password2" placeholder="Confirm Password" name="confirm password" required>
+                <span onclick="toggleConfirmPassword()"
+                style="position: absolute;
+                right:10px;
+                top:50%;
+                transform:translateY(-50%);
+                cursor:pointer;"
+                >
+                <i class="fa-solid fa-eye" id="icon2" style="color: red;"></i>
+                </span>
+                </div>
+                <button type="submit">Signup</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </section>

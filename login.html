@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bitebox Deals</title>
+
+    <script src="https://kit.fontawesome.com/b488c3478e.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon/android-chrome-192x192.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h2>login page</h2>
-</body>
-</html>
+    <header>
+        <nav>
+    <div>
+        <!-- Logo -->
+        <img src="images/Copilot_20260706_181946 (1).png" alt="logo" width="100px">
+        <!-- Menu -->
+    </div>
+<ul>
+    <li><a href="Home.html" class="active">HOME</a></li>
+    <li><a href="menu.html">MENU</a></li>
+    <li><a href="bitedeals.html">BITEDEALS</a></li>
+    <li><a href="Cart.html"><i class="fa-solid fa-cart-arrow-down"></i></i>CART</a></li>
+    <li><a href="login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>LOGIN</a></li>
+</ul>
+    
+</nav>
+    </header>
+
+    <section class="auth-container">
+        <div class="auth-box">
+            <h2>Login to Bite<span>Box</span></h2>
+            <form>
+            <input type="email" placeholder="Enter Email" id="email" required>
+
+<div style="position: relative;">
+
+    <input type="password" id="password" placeholder="Enter Password" required>
+
+    <span onclick="togglePassword()"
+          style="position:absolute; right:10px; top:50%; transform:translateY(-50%); cursor:pointer;">
+
+         <i class="fa-solid fa-eye" id="togglePassword" style="color: red;"></i>
+
+    </span>
+
+</div>
+
+                <button type="button" onClick="login()">Login</button>
+            </form>
+            
+            <p id="error" style="color: red;"></p>
+            <p><a href="signup.html">Forget Password</a></p>
+            <p>Don't have an account <a href="signup.html">Signup</a></p>
+             </div>
